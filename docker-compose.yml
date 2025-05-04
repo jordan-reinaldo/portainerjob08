@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  apache_web:
+    build: .
+    container_name: apache_job08
+    ports:
+      - "9700:80"
+    volumes:
+      - ./www:/var/www/html"
